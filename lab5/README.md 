@@ -1,0 +1,35 @@
+# Laboratorio 5 — Pytest + CSV
+
+## Parte A — Módulo simple
+Funciones implementadas en `src/funciones.py`:
+- `suma(a, b)`: retorna suma de enteros.
+- `invertir_texto(texto)`: invierte cadena, error si no es string.
+- `es_par(numero)`: retorna True si es par, error si no es int.
+
+Pruebas en `tests/test_funciones.py`.
+
+## Parte B — Validación CSV
+Dataset: **Capital city population - UN Urbanization Prospects (2018)**  
+Fuente: Datos de urbanización de Naciones Unidas  
+Columnas: `Entity` (País o Área), `Year` (Año), `Capital city population...` (Población de la capital)
+
+Validaciones implementadas:
+- Columnas obligatorias presentes
+- Valores de población no negativos
+- Combinación única de (Entity, Year)
+- Tipos de datos correctos
+
+## Ejecución de pruebas
+```bash
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar todas las pruebas
+pytest
+
+# Ejecutar con detalles
+pytest -v
+
+# Ejecutar pruebas específicas
+pytest tests/test_funciones.py
+pytest tests/test_csv.py
