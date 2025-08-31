@@ -44,3 +44,9 @@ build/
 # Archivos temporales
 *.tmp
 *.temp
+
+# Archivos grandes (manejados con LFS)
+proyecto_covid/compact.csv
+proyecto_covid/covid/.tmp_dagster_home*/
+proyecto_covid/covid/**/leer_datos
+proyecto_covid/covid/**/storage/

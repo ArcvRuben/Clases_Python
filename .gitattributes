@@ -1,0 +1,4 @@
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+proyecto_covid/reporte_covid.xlsx filter=lfs diff=lfs merge=lfs -text
+proyecto_covid/tabla_perfilado.csv filter=lfs diff=lfs merge=lfs -text
